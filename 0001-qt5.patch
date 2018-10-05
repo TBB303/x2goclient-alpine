@@ -1,0 +1,19 @@
+--- a/Makefile	2018-06-25 23:21:49.000000000 +0300
++++ b/Makefile	2018-09-28 15:22:44.787135114 +0300
+@@ -15,13 +15,13 @@
+ RM_DIR=rmdir -p --ignore-fail-on-non-empty
+ 
+ DESTDIR=
+-PREFIX=/usr/local
++PREFIX=/usr/
+ ETCDIR=/etc/x2go
+ BINDIR=$(PREFIX)/bin
+ SHAREDIR=$(PREFIX)/share
+ MANDIR=$(SHAREDIR)/man
+-QMAKE_BINARY=qmake-qt4
+-LRELEASE_BINARY=lrelease-qt4
++QMAKE_BINARY=qmake-qt5
++LRELEASE_BINARY=lrelease-qt5
+ QMAKE_OPTS=
+ 
+ LDFLAGS+=-lldap -lcups -lX11 -lXpm
